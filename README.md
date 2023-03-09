@@ -19,6 +19,8 @@ Neste sentido, os issues para solicitação de melhoria e ou correção de bugs 
 
 ---
 
+![Vídeo Demosntrando a utilização do repositório](https://youtu.be/YMAcnwdf8rw)
+
 ### Instalação
 
 Para utilização do repositório necessário realizar a instalação dos programas 
@@ -46,7 +48,7 @@ Inicializa container docker e servidor local
 poetry run task container
 ```
 
-Obs.: Ao executar o comando `poetry run task presentation <nome_da_nova_apresentação>` o nome da nova apresentação deverá ser informada no padrão [`snaque_small_case`](https://en.wikipedia.org/wiki/Snake_case).
+Obs.: Ao executar o comando `poetry run task presentation <nome_da_nova_apresentação>` o nome da nova apresentação deverá ser informada no padrão [`snaque_small_case`](https://en.wikipedia.org/wiki/Snake_case) sem caracteres acentuação e ou especiais.
 
 Comandos `poetry run task presentation <nome_da_nova_apresentação>` e `poetry run task index` realizam modificações/criações de arquivos no repositório, sendo necessário, portanto, posterior commit.
 
