@@ -89,3 +89,29 @@ As apresentações pode ser [salvas em pdf](https://revealjs.com/pdf-export/) no
 - `esc`: Visualização de todos os slides.
 - `g`: Dá possibilidade de indicar o número do slide que deseja acessar.
 - `s`: Acessa página speaker view.
+
+### Atualizações com o repositório forkado
+
+Com exceção do arquivo `index.html` as demais adaptações no repositório ocorreram em arquivos próprios.
+Seguindo orientações [deste post Stackoverflow](https://stackoverflow.com/a/41448584/11755155) as atualizações deverão ocorrer da seguinte maneira:
+
+```
+# Sem nada para commitar na master
+$ git checkout master
+
+# Pull da master
+$ git pull origin master
+
+# Fetch upstream
+$ git pull upstream master
+
+# Rebase
+$ git rebase upstream/master
+
+# Caso não acha nenhum conflito - Successfully rebased and updated refs/heads/master.
+# Ligar o servidor para testar se nada quebrou
+$ poetry run task container
+
+# Tudo funcionando realizar o push para origin
+$ git push origin master
+```
