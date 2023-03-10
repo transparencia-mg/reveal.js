@@ -19,7 +19,7 @@ Neste sentido, os issues para solicitação de melhoria e ou correção de bugs 
 
 ---
 
-![Vídeo Demosntrando a utilização do repositório](https://youtu.be/YMAcnwdf8rw)
+[![Watch the video](https://img.youtube.com/vi/YMAcnwdf8rw/maxresdefault.jpg)](https://youtu.be/YMAcnwdf8rw)
 
 ### Instalação
 
