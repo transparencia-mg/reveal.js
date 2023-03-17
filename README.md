@@ -68,7 +68,6 @@ Ao apertar a tecla "s" uma nova janela será aberta, apenas para o apresentador,
 O "speaker view" desta apresentação também foi configurado para ajudar na gestão do tempo.
 A configuração padrão adotada foi de 3600 segundos (ou uma hora). Caso necessite, esta  poderá ser modificada no parâmetro `totalTime` ta tag `script` do arquivo `index.html` existente na raiz da sua apresentação.
 
-
 ```
     <script>
       // More info about initialization & config:
@@ -85,6 +84,23 @@ A configuração padrão adotada foi de 3600 segundos (ou uma hora). Caso necess
       });
     </script>
 ```
+
+O [plugin Mermaid foi instalado](https://github.com/transparencia-mg/handbook/issues/64#issuecomment-1474349126) no template, devendo a sintaxe abaixo ser utilizada normalmente nos arquivos markdow:
+
+```
+<div class="mermaid">
+  <pre>
+    <!-- %%{init: {'theme': 'dark', 'themeVariables': { 'darkMode': true }}}%% -->
+    flowchart TD
+      A[Start] --> B;
+      B[End];
+  </pre>
+</div>
+```
+
+Para consulta a sintaxe para escrita de gráficos e fluxogramas com Mermaid consulte a [documentação da ferramenta](https://mermaid.js.org/intro/). Diversas opções estão disponíveis, sendo provavelmente o [fluxograma](https://mermaid.js.org/syntax/flowchart.html) o mais utilizado. Para configurar o tema Mermaid (linha `<!-- %%{init: {'theme': 'dark', 'themeVariables': { 'darkMode': true }}}%% -->` comentada no script acima) basta acessar, também, a [documentação](https://mermaid.js.org/config/theming.html#theme-configuration).
+
+Outro plugin instalado foi o [menu](https://github.com/denehyg/reveal.js-menu). Todas as suas funcionalidades podem ser acessadas [neste live demo](https://denehyg.github.io/reveal.js-menu/#/home). O arquivo `links.html` criado na pasta de todas as apresentações é uma de suas funcionalidades e possibilita a inclusão de links na apresentação. Suas opções podem ser acessadas em um menu sanduíche criado no canto inferior esquerdo das apresentações, não deixe de conferir e experimentar.
 
 As apresentações pode ser [salvas em pdf](https://revealjs.com/pdf-export/) no navegador Google Chrome, bastando acrescentar `?print-pdf` ao final da URL da mesma e utilizando o atalho `CTRL+P` para selecionar o local aonde a mesma será salva em sua máquina.
 
