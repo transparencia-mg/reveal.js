@@ -6,27 +6,13 @@
 
 		<title>Apresentação DTA</title>
 
-		<link rel="stylesheet" href="../../dist/reset.css">
-		<link rel="stylesheet" href="../../dist/reveal.css">
-		<link rel="stylesheet" href="../../dist/theme/black.css">
-
-		<!-- Mermaid -->
-		<link
-		  rel="stylesheet"
-		  href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reset.css"
-		/>
-		<link
-		  rel="stylesheet"
-		  href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.css"
-		/>
-		<link
-		  rel="stylesheet"
-		  href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/black.css"
-		  id="theme"
-		/>
+		<link rel="stylesheet" href="../../dist/reset.css" />
+		<link rel="stylesheet" href="../../dist/reveal.css" />
+		<link rel="stylesheet" href="../../dist/theme/solarized.css" id="theme"/>
+		
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="../../plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="../../plugin/highlight/monokai.css" id="highlight-theme" />
 	</head>
 	<body>
 		<div class="reveal">
@@ -49,9 +35,12 @@
 		<script src="../../plugin/markdown/markdown.js"></script>
 		<script src="../../plugin/highlight/highlight.js"></script>
 		
+		<!-- Menu -->
+		<script src="../../plugin/menu/menu.js"></script>
+		
 		<!-- Mermaid -->
-		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin@1.1.0/plugin/mermaid/mermaid.js"></script>
+		
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -63,9 +52,16 @@
 				totalTime: 4500,
 				// Mermaid
 				center: true,
-
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMermaid ]
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMermaid, RevealMenu],
+
+				menu: {
+			          numbers: 'c',
+			          openSlideNumber: true,
+			          themes: true,
+			          themesPath: '../../dist/theme/',
+			          transitions: true,
+			        }
 			});
 		</script>
 	</body>

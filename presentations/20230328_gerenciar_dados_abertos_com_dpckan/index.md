@@ -30,22 +30,16 @@ Tempo Estimado de 1:15 de apresentação com 15 minutos para perguntas e respost
 ## Princípios e diretrizes
 <div class="mermaid">
 	<pre>
-	  %%{init: {'theme': 'dark', 'themeVariables': { 'darkMode': true }}}%%
+	  <!-- %%{init: {'theme': 'dark', 'themeVariables': { 'darkMode': true }}}%% -->
 	  flowchart TD
-	    A[Start] --> B{Is it?};
-	    B -- Yes --> C[OK];
-	    C --> D[Rethink];
-	    D --> B;
-	    B -- No ----> E[End];
+	    A[Start] --> B;
+	    B[End];
 	</pre>
 </div>
 
 
 
 ## Retornando de onde paramos
-
-
-
 
 
 
