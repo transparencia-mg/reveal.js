@@ -23,8 +23,7 @@ Tempo Estimado de 1:15 de apresentação com 15 minutos para perguntas e respost
 
 ## Quem Somos
 
-- Administradores Públicos de formação.
-- Servidores da Controladoria-Geral do Estado de Minas Gerais - [CGE-MG](https://cge.mg.gov.br/). 
+- Servidores Públicos na Controladoria-Geral do Estado de Minas Gerais - [CGE-MG](https://cge.mg.gov.br/). 
 - Lotados na Diretoria Central de Transparência Ativa:
 	- [Portal da Transparência MG](https://www.transparencia.mg.gov.br/)
 	- [Portal de Dados Abertos MG](https://dados.mg.gov.br/)
@@ -52,9 +51,11 @@ Formato aberto: Dados normalizados
 ![mao_na_massa](assets/mao_na_massa.jpg) 
 
 Note: 
-Vamos publicar nosso primeiro conjunto de dados no utilizando a interface gráfica do [CKAN](http://treinamento.cge.mg.gov.br/).
+Vamos publicar nosso primeiro conjunto de dados no utilizando a interface gráfica do [CKAN](https://treinamento.dadosabertos.cge.mg.gov.br/).
 
 Utilizaremos como exemplo a base de [Crimes Violentos](https://dados.mg.gov.br/dataset/crimes-violentos).
+
+Realização de perguntas no chat e acessar o que estamos fazendo.
 
 
 ## Mão na massa - Experimento mental
@@ -62,6 +63,10 @@ Utilizaremos como exemplo a base de [Crimes Violentos](https://dados.mg.gov.br/d
 [Se uma informação só existe com a pessoa que a gerou, e essa pessoa não está disponível, essa informação realmente existe?](https://www.youtube.com/watch?v=JUW60w1jDdM&t=1346s) 
 
 Parafraseando [@mtholder](https://twitter.com/kcranstn/status/370914072511791104?s=20), você, de 6 meses atrás, não está mais disponível.
+
+Note:
+Abrir p perguntas - Primeira pausa.
+Mostrar ambiente de produção crimes violentos com o metadado.
 
 
 ## Mão na massa - Fontes de Fricção
@@ -87,7 +92,9 @@ Padrão csv brasileiro utiliza o ';' no lugar da ','. Problemas para existência
 Note:
 Caso haja alguma pergunta exemplificar com as [sugestões de melhoria](https://dados.mg.gov.br/dataset/crimes-violentos#:~:text=tamb%C3%A9m%20ser%C3%A3o%20inclu%C3%ADdos.-,Como%20participar,-Saiba%20como%20contribuir).
 
-Exemplo COD_MUNICIPIO que pode ser melhor explicado.
+Gostaríamos de sugestões.
+
+Exemplo COD_MUNICIPIO que pode ser melhor explicado - SOMENTE SE QUESTIONADO.
 
 
 ## Mão na massa - dpckan
@@ -160,7 +167,7 @@ Utilização da GitBash para Windows
 
 [CKANEXT DATAPACKAGE CREATOR](https://pypi.org/project/ckanext-datapackage-creator/)
 
-[Demonstração](http://treinamento.cge.mg.gov.br/)
+[Demonstração](https://treinamento.dadosabertos.cge.mg.gov.br/)
 
 Notes:
 Futura GUI a ser instalado em nossa instância do CKAN.
