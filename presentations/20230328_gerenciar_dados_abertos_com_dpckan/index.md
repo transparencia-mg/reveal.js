@@ -6,6 +6,9 @@ Note:
 - Agradecer a oportunidade e o convite.
 - Falar que fizemos os dois cursos a importância em nosso trabalho.
 - Tempo Estimado de 1:15 de apresentação com 15 minutos para perguntas e respostas.
+- Convidar para visitar os links que serão mostrados.
+- Perguntas no chat.
+- Dois momentos para responder perguntas ao longo da apresentação e um ao final.
 
 
 
@@ -27,7 +30,7 @@ Note:
 ![normalized_table](assets/normalized_table.jpg)
 
 Note:
-- Licença Aberta: Reutilização em apps e visualizações.
+- Licença Aberta: Reutilização em apps e visualizações atribuindo a mesma licença.
 - Formato aberto: Não proprietários como arquivos csv.
 - Legível por máquina: Dados normalizados.
 
@@ -38,8 +41,7 @@ Note:
 
 Note: 
 - Vamos publicar nosso primeiro conjunto de dados no utilizando a interface gráfica do [CKAN](https://treinamento.dadosabertos.cge.mg.gov.br/).
-- Utilizaremos como exemplo a base de [Crimes Violentos](https://dados.mg.gov.br/dataset/crimes-violentos).
-- Realização de perguntas no chat e acessar o que estamos fazendo.
+- Utilizaremos como exemplo a base de [Crimes Violentos](https://dados.mg.gov.br/dataset/crimes-violentos), publicada seguindo os princípios e diretrizes mencionados.
 
 
 ### Mão na massa - Experimento mental
@@ -49,8 +51,9 @@ Note:
 - Parafraseando [@mtholder](https://twitter.com/kcranstn/status/370914072511791104?s=20), você, de 6 meses atrás, não está mais disponível.
 
 Note:
+- Experimento mental feito por Francisco CODA 2021.
+- Mostrar ambiente de produção crimes violentos e convidar para visita do site.
 - Primeira pausa para perguntas.
-- Mostrar ambiente de produção crimes violentos com o metadado.
 
 
 ## Mão na massa - Fontes de Fricção
@@ -61,6 +64,8 @@ Note:
 - Os dados estão corretos? [Frictionless Data Specifications](https://specs.frictionlessdata.io/#overview)
 
 Note:
+- Metadados do conjunto utilizado estão na versão em produção.
+- 
 - Encoding e delimitadores no padrão internacional.
 - Separador de milhar e decimal no padrão internacional.
 - Padrão csv brasileiro com ';'.
@@ -95,6 +100,7 @@ CLI Python disponível no [Pypi](https://pypi.org/project/dpckan/)
 	pip list
 
 Note:
+- Ganhador do hackaton frictionless em 2021
 - Utilização da GitBash para Windows
 - venv como boa prática.
 - CKAN garante a disponibilização na Web.
@@ -145,6 +151,7 @@ Note:
 - Para personas não poliglotas em dados.
 - Melhora interação com processo de documentação.
 - dpckan não continuará em utilização.
+- Segunda pausa para perguntas.
 
 
 
