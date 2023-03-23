@@ -176,10 +176,11 @@ Note:
 
 
 
-## Perguntas e respostas
+## Mais perguntas do que respostas
 
 ![question_mark](assets/question_mark.jpg)
 
+[Perguntas recebidas no chat](https://transparencia-mg.github.io/handbook/0.1/posts/20230328_apresentacao_dpckan_curso_ckan/#perguntas-e-respostas)
 
 
 ## Contatos
