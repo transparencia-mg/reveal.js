@@ -23,6 +23,7 @@ Note:
 - Perguntas e respostas
 
 
+
 ## Quem somos
 
 - Servidores Públicos na Controladoria-Geral do Estado de Minas Gerais - [CGE-MG](https://cge.mg.gov.br/). 
@@ -183,9 +184,9 @@ Note:
 
 ## Contatos
 
-gabriel.dornas@cge.mg.gov.br
 andre.amorim@cge.mg.gov.br
 flavia.vilela@cge.mg.gov.br
+gabriel.dornas@cge.mg.gov.br
 
 https://github.com/transparencia-mg/
 
