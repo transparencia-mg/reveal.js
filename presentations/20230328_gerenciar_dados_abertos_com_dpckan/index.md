@@ -3,21 +3,9 @@
 Como Gerenciar Dados Abertos com o [DPCKAN](https://pypi.org/project/dpckan/).
 
 Note:
-Agradecer a oportunidade e o convite.
-
-Falar que fizemos os dois cursos a importância em nosso trabalho.
-
-
-
-## Agenda
-
-- Quem Somos
-- Princípios e diretrizes
-- Mão na massa
-- Perguntas e respostas
-
-Note:
-Tempo Estimado de 1:15 de apresentação com 15 minutos para perguntas e respostas
+- Agradecer a oportunidade e o convite.
+- Falar que fizemos os dois cursos a importância em nosso trabalho.
+- Tempo Estimado de 1:15 de apresentação com 15 minutos para perguntas e respostas.
 
 
 
@@ -39,11 +27,9 @@ Tempo Estimado de 1:15 de apresentação com 15 minutos para perguntas e respost
 ![normalized_table](assets/normalized_table.jpg)
 
 Note:
-Licença Aberta: Permitir sua reutilização
-
-Estruturado em formato aberto: Sistemas não proprietários como arquivos csv.
-
-Formato aberto: Dados normalizados
+- Licença Aberta: Reutilização em apps e visualizações.
+- Formato aberto: Não proprietários como arquivos csv.
+- Legível por máquina: Dados normalizados.
 
 
 
@@ -51,22 +37,20 @@ Formato aberto: Dados normalizados
 ![mao_na_massa](assets/mao_na_massa.jpg) 
 
 Note: 
-Vamos publicar nosso primeiro conjunto de dados no utilizando a interface gráfica do [CKAN](https://treinamento.dadosabertos.cge.mg.gov.br/).
-
-Utilizaremos como exemplo a base de [Crimes Violentos](https://dados.mg.gov.br/dataset/crimes-violentos).
-
-Realização de perguntas no chat e acessar o que estamos fazendo.
+- Vamos publicar nosso primeiro conjunto de dados no utilizando a interface gráfica do [CKAN](https://treinamento.dadosabertos.cge.mg.gov.br/).
+- Utilizaremos como exemplo a base de [Crimes Violentos](https://dados.mg.gov.br/dataset/crimes-violentos).
+- Realização de perguntas no chat e acessar o que estamos fazendo.
 
 
-## Mão na massa - Experimento mental
+### Mão na massa - Experimento mental
 
-[Se uma informação só existe com a pessoa que a gerou, e essa pessoa não está disponível, essa informação realmente existe?](https://www.youtube.com/watch?v=JUW60w1jDdM&t=1346s) 
+- [Se uma informação só existe com a pessoa que a gerou, e essa pessoa não está disponível, essa informação realmente existe?](https://www.youtube.com/watch?v=JUW60w1jDdM&t=1346s) 
 
-Parafraseando [@mtholder](https://twitter.com/kcranstn/status/370914072511791104?s=20), você, de 6 meses atrás, não está mais disponível.
+- Parafraseando [@mtholder](https://twitter.com/kcranstn/status/370914072511791104?s=20), você, de 6 meses atrás, não está mais disponível.
 
 Note:
-Abrir p perguntas - Primeira pausa.
-Mostrar ambiente de produção crimes violentos com o metadado.
+- Primeira pausa para perguntas.
+- Mostrar ambiente de produção crimes violentos com o metadado.
 
 
 ## Mão na massa - Fontes de Fricção
@@ -77,27 +61,22 @@ Mostrar ambiente de produção crimes violentos com o metadado.
 - Os dados estão corretos? [Frictionless Data Specifications](https://specs.frictionlessdata.io/#overview)
 
 Note:
-Falar sobre a importância do encoding e delimitadores e da diferença para o padrão internacional.
-
-Separador de milhar, separador de decimal.
-
-Padrão csv brasileiro utiliza o ';' no lugar da ','. Problemas para existência de valores com vírgula (decimal) no arquivo. 
+- Encoding e delimitadores no padrão internacional.
+- Separador de milhar e decimal no padrão internacional.
+- Padrão csv brasileiro com ';'.
 
 
-## Mão na massa - Docs Like Code
+### Mão na massa - Docs Like Code
 
 [Anne Gentle](https://www.docslikecode.com/)
 ![docs_like_code](assets/docs_like_code.jpg)
 
 Note:
-Caso haja alguma pergunta exemplificar com as [sugestões de melhoria](https://dados.mg.gov.br/dataset/crimes-violentos#:~:text=tamb%C3%A9m%20ser%C3%A3o%20inclu%C3%ADdos.-,Como%20participar,-Saiba%20como%20contribuir).
-
-Gostaríamos de sugestões.
-
-Exemplo COD_MUNICIPIO que pode ser melhor explicado - SOMENTE SE QUESTIONADO.
+- [sugestões de melhoria crimes violentos](https://dados.mg.gov.br/dataset/crimes-violentos#:~:text=tamb%C3%A9m%20ser%C3%A3o%20inclu%C3%ADdos.-,Como%20participar,-Saiba%20como%20contribuir).
+- SOMENTE SE QUESTIONADO: Exemplo COD_MUNICIPIO pouco documentado.
 
 
-## Mão na massa - dpckan
+### Mão na massa - dpckan
 
 [CKAN](https://ckan.org/) + [Frictionless](https://frictionlessdata.io/) = [dpckan](https://github.com/transparencia-mg/dpckan)
 
@@ -116,16 +95,14 @@ CLI Python disponível no [Pypi](https://pypi.org/project/dpckan/)
 	pip list
 
 Note:
-Ambiente virtual como boa prática.
-
-CKAN garante a disponibilização na Web.
-
-Frictionless garante padrão de qualidade via dados legíveis por máquina.
-
-dpckan garante a publicação em escala de vários recursos para um único conjunto.
+- Utilização da GitBash para Windows
+- venv como boa prática.
+- CKAN garante a disponibilização na Web.
+- Frictionless garante leitura por máquina e qualidade.
+- dpckan garante a publicação em escala de vários recursos para um único conjunto.
 
 
-## Mão na massa - dpckan
+### Mão na massa - dpckan
 	
 	# Inferência de metadados - datapackage.json
 	frictionless describe crimes_violentos.csv --type package --json > datapackage.json
@@ -141,59 +118,42 @@ dpckan garante a publicação em escala de vários recursos para um único conju
 	dpckan resource update
 
 Note:
-O que está sendo feito e porque?
-
-Qual alternativa: [datapackage creator](https://create.frictionlessdata.io/).
-
-Prós e contras.
+- [Datapackage creator](https://create.frictionlessdata.io/).
+- Prós e contras de cada alternativa.
 
 
 
-## Problemas do modelo
+## Aprendizados
 
 ![poliglotas](assets/poliglotas.jpg)
 
 Note:
-E difícil contar com a disposição das pessoas em operar a linha de comando, pois são poucos os poliglotas.
-
-Nós, administradores do sistema ilhados neste contexto.
-
-Baixa adesão ao modelo proposto.
-
-Utilização da GitBash para Windows
+- E difícil contar com a disposição das pessoas em operar a linha de comando, pois são poucos os poliglotas.
+- Baixa adesão ao modelo proposto.
+- Ficamos ilhados neste contexto.
 
 
-## Problemas do modelo - Solução
 
-[CKANEXT DATAPACKAGE CREATOR](https://pypi.org/project/ckanext-datapackage-creator/)
+## Novas soluções proposta
 
-[Demonstração](https://treinamento.dadosabertos.cge.mg.gov.br/)
+- [CKANEXT DATAPACKAGE CREATOR](https://pypi.org/project/ckanext-datapackage-creator/)
 
-Notes:
-Futura GUI a ser instalado em nossa instância do CKAN.
+[Demonstração](http://projetockan.cge.mg.gov.br/)
 
-Para personas non poliglotas em dados.
-
-Melhora interação com Frictionless e possibilidade de publicar e baixar dados em massa, com metadados padronizados e especificados legivelmente por máquina, tanto as estruturas físicas e lógicas - o próprio dicionário de dados é estruturado)
-
-constantes atualizações nas dependências do CKAN (bootstrap, etc); atrasos nas estimativas de versões; ; ; preferência pelo apelo visual (dashboards, gráficos, resumos 'at a glance') em detrimento da granularidade e completude das bases acessíveis por código aberto
+Note:
+- Futura GUI a ser instalado em nossa instância do CKAN.
+- Para personas não poliglotas em dados.
+- Melhora interação com processo de documentação.
+- dpckan não continuará em utilização.
 
 
-# Próximos passos - Desafios
 
-Treinamento:
-	- Ecossistema de demanda e oferta de dados incipiente em MG.
-	- Gap de conhecimento tanto de publicadores quanto de usuários - Data Literacy.
-	- Conhecimentos específicos até para o pessoas que trabalham na área.
+## Próximos desafios
 
-
-Gestão da Política:
-	- Gestão do contrato com a fornecedora que nos auxiliou na construção da extensão complexa.
-	- Tamanho do banco necessário para comportar bases complexas (dados geospaciais).
-
-
-Notes:
-
+- Ecossistema de demanda e oferta de dados incipiente em MG.
+- Gap de conhecimento tanto de publicadores quanto de usuários - Data Literacy.
+- Conhecimentos específicos até para o pessoas que trabalham na área.
+- Tamanho do banco necessário para comportar bases complexas (dados geospaciais).
 
 
 
@@ -210,6 +170,7 @@ andre.amorim@cge.mg.gov.br
 flavia.vilela@cge.mg.gov.br
 
 https://github.com/transparencia-mg/
+
 
 
 ## Muito Obrigado
