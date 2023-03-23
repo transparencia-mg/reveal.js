@@ -12,7 +12,18 @@ Note:
 
 
 
-## Quem Somos
+## Agenda
+
+- Quem somos
+- Princípios e diretrizes
+- Mão na massa
+- Aprendizados
+- Novas soluções
+- Próximos desafios
+- Perguntas e respostas
+
+
+## Quem somos
 
 - Servidores Públicos na Controladoria-Geral do Estado de Minas Gerais - [CGE-MG](https://cge.mg.gov.br/). 
 - Lotados na Diretoria Central de Transparência Ativa:
@@ -44,7 +55,7 @@ Note:
 - Utilizaremos como exemplo a base de [Crimes Violentos](https://dados.mg.gov.br/dataset/crimes-violentos), publicada seguindo os princípios e diretrizes mencionados.
 
 
-### Mão na massa - Experimento mental
+## Mão na massa - Experimento mental
 
 - [Se uma informação só existe com a pessoa que a gerou, e essa pessoa não está disponível, essa informação realmente existe?](https://www.youtube.com/watch?v=JUW60w1jDdM&t=1346s) 
 
@@ -71,7 +82,7 @@ Note:
 - Padrão csv brasileiro com ';'.
 
 
-### Mão na massa - Docs Like Code
+## Mão na massa - Docs Like Code
 
 [Anne Gentle](https://www.docslikecode.com/)
 ![docs_like_code](assets/docs_like_code.jpg)
@@ -81,7 +92,7 @@ Note:
 - SOMENTE SE QUESTIONADO: Exemplo COD_MUNICIPIO pouco documentado.
 
 
-### Mão na massa - dpckan
+## Mão na massa - dpckan
 
 [CKAN](https://ckan.org/) + [Frictionless](https://frictionlessdata.io/) = [dpckan](https://github.com/transparencia-mg/dpckan)
 
@@ -108,7 +119,7 @@ Note:
 - dpckan garante a publicação em escala de vários recursos para um único conjunto.
 
 
-### Mão na massa - dpckan
+## Mão na massa - dpckan
 	
 	# Inferência de metadados - datapackage.json
 	frictionless describe crimes_violentos.csv --type package --json > datapackage.json
@@ -140,7 +151,7 @@ Note:
 
 
 
-## Novas soluções proposta
+## Novas soluções
 
 - [CKANEXT DATAPACKAGE CREATOR](https://pypi.org/project/ckanext-datapackage-creator/)
 
