@@ -1,4 +1,4 @@
-## Datapackage Manager for CKAN - DPCKAN
+## Datapackage ManagerS - Ferramentas de gerenciamento de dados no CKAN
 
 Como Gerenciar Dados Abertos com o [DPCKAN](https://pypi.org/project/dpckan/).
 
@@ -121,6 +121,8 @@ Note:
 
 
 ## Mão na massa - dpckan
+
+[CKAN](https://ckan.org/) + [Frictionless](https://frictionlessdata.io/) = [dpckan](https://github.com/transparencia-mg/dpckan)
 	
 	# Inferência de metadados - datapackage.json
 	frictionless describe crimes_violentos.csv --type package --json > datapackage.json
