@@ -156,7 +156,7 @@ Note:
 
 ## Novas soluções
 
-- [CKANEXT DATAPACKAGE CREATOR](https://pypi.org/project/ckanext-datapackage-creator/)
+- [CKANEXT DATAPACKAGE CREATOR](https://pypi.org/project/ckanext-datapackage-creator/) = dpckan na interface gráfica do CKAN!
 
 [Demonstração](http://projetockan.cge.mg.gov.br/)
 
