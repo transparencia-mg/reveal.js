@@ -50,6 +50,8 @@ Note:
 
 ## Princípios e diretrizes - escala de maturidade de dados
 
+![image](https://user-images.githubusercontent.com/52294411/228063683-afec89fa-973a-43d7-bb7c-03195b71c5a4.png)
+
 
 Note:
 - Leis dos dados abertos (David Eaves): Se o dado não pode ser encontrado e indexado na web, ele não existe. Se não estiver aberto e disponível em formato compreensível por máquina, ele não pode ser reaproveitado. Se algum dispositivo legal não permitir sua reaplicação, ele não é útil. (correspondência com 3 primeiros patamares)
