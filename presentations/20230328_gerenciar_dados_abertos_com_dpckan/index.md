@@ -121,6 +121,8 @@ Note:
 
 
 ## Mão na massa - dpckan
+
+[CKAN](https://ckan.org/) + [Frictionless](https://frictionlessdata.io/) = [dpckan](https://github.com/transparencia-mg/dpckan)
 	
 	# Inferência de metadados - datapackage.json
 	frictionless describe crimes_violentos.csv --type package --json > datapackage.json
@@ -154,7 +156,7 @@ Note:
 
 ## Novas soluções
 
-- [CKANEXT DATAPACKAGE CREATOR](https://pypi.org/project/ckanext-datapackage-creator/)
+- [CKANEXT DATAPACKAGE CREATOR](https://pypi.org/project/ckanext-datapackage-creator/) = dpckan na interface gráfica do CKAN!
 
 [Demonstração](http://projetockan.cge.mg.gov.br/)
 
