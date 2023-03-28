@@ -190,7 +190,7 @@ Note:
 
 - Ecossistema de demanda e oferta de dados incipiente em MG.
 - Gap de conhecimento tanto de publicadores quanto de usuários - Data Literacy.
-- Conhecimentos específicos até para o pessoas que trabalham na área.
+- Conhecimentos específicos até para as pessoas que trabalham na área.
 - Tamanho do banco necessário para comportar bases complexas (dados geospaciais).
 
 
