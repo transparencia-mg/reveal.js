@@ -7,7 +7,7 @@ Note:
 - Falar que fizemos os dois cursos a importância em nosso trabalho (contexto de reformulação do portal como portal de fato, definições de qualidade e expansão).
 - Convidar para visitar os links que serão mostrados, navegar pelo Portal e testar o dpckan (importância do fomento ao ecossitema).
 - Perguntas no chat e respostas ao final da apresentação;
-- Tempo Estimado de 1:15 de apresentação com 15 minutos para perguntas e respostas. Momentos final para responder perguntas e conversar
+- Tempo Estimado de 1:15 de apresentação com 15 minutos para perguntas e respostas. Momentos final para responder perguntas e conversar.
 
 
 
