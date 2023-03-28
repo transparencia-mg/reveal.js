@@ -6,8 +6,9 @@ Note:
 - Agradecer a oportunidade e o convite.
 - Falar que fizemos os dois cursos a importância em nosso trabalho (contexto de reformulação do portal como portal de fato, definições de qualidade e expansão).
 - Convidar para visitar os links que serão mostrados, navegar pelo Portal e testar o dpckan (importância do fomento ao ecossitema).
-- Perguntas no chat e respostas, na medida do possível, ao longo da apresentação;
+- Perguntas no chat e respostas ao final da apresentação;
 - Tempo Estimado de 1:15 de apresentação com 15 minutos para perguntas e respostas. Momentos final para responder perguntas e conversar
+
 
 
 ## Agenda
@@ -21,6 +22,7 @@ Note:
 - Perguntas e respostas
 
 
+
 ## Quem somos
 
 - Servidores Públicos na Controladoria-Geral do Estado de Minas Gerais - [CGE-MG](https://cge.mg.gov.br/). 
@@ -30,6 +32,7 @@ Note:
 
 Note:
 - Competências da DCTA relacionadas ao mão na massa: Gerenciar e propor a evolução das consultas e demais funcionalidades do Portal da Transparência e do Portal de Dados Abertos do Poder Executivo, com o objetivo de aprimorar a divulgação das informações junto à sociedade; fomentar a disponibilização de informações públicas em formato aberto no Portal da Transparência e nos sítios eletrônicos dos órgãos e entidades do Poder Executivo; planejar e coordenar o desenvolvimento das regras de negócio para as ferramentas e sistemas visando a promoção da transparência ativa no âmbito do Poder Executivo;
+
 
 
 ## Princípios e diretrizes
@@ -48,10 +51,10 @@ Note:
 - Legível por máquina: Dados normalizados (arquivos json para metadados). Leitura por máquina tanto dos dados quanto dos metadados
 - Definição de especificação de metadados na [LAI](https://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Lei/L12527.htm#art8): IV - divulgar em detalhes os formatos utilizados para estruturação da informação;
 
+
 ## Princípios e diretrizes - escala de maturidade de dados
 
-![image](https://user-images.githubusercontent.com/52294411/228063683-afec89fa-973a-43d7-bb7c-03195b71c5a4.png)
-
+![maturidade](assets/maturidade.jpg)
 
 Note:
 - Leis dos dados abertos (David Eaves): Se o dado não pode ser encontrado e indexado na web, ele não existe. Se não estiver aberto e disponível em formato compreensível por máquina, ele não pode ser reaproveitado. Se algum dispositivo legal não permitir sua reaplicação, ele não é útil. (correspondência com 3 primeiros patamares)
@@ -59,6 +62,7 @@ Note:
 - Protagonismo do publicador, CGE órgão central como indutor;
 - Processo de qualidade = edição e verificação de metadados legíveis por máquina (incorporação de 'validação' da Frictionless; termo usado para comparar se a descrição da estrutura lógica dos dados/metadados está de acordo com os próprios dados - não serve para verifiar a semântica dos dados no mundo real, que é o papel do órgão responsável pela publicação)
 - Incorporação desse processo de verificação de qualidade como incentivo à adesão de mais órgãos publicadores, pois pode ser incorporado como bônus para outras rotinas
+
 
 
 ## Mão na massa
@@ -196,6 +200,7 @@ Note:
 ![question_mark](assets/question_mark.jpg)
 
 [Perguntas recebidas no chat](https://transparencia-mg.github.io/handbook/0.1/posts/20230328_apresentacao_dpckan_curso_ckan/#perguntas-e-respostas)
+
 
 
 ## Contatos
