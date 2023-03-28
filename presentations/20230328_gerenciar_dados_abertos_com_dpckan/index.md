@@ -149,7 +149,7 @@ Note:
 
 	# Publicação de um conjunto de dados
 	# Leitura das mensagens de erro
-	dpckan --ckan-host https://treinamento.cge.mg.gov.br --ckan-key <ckan-key> dataset create
+	dpckan --ckan-host https://treinamento.dadosabertos.cge.mg.gov.br --ckan-key <ckan-key> dataset create
 	dpckan dataset update
 	dpckan resource create
 	dpckan resource update
