@@ -112,7 +112,7 @@ As apresentações pode ser [salvas em pdf](https://revealjs.com/pdf-export/) no
 
 ### Atualizações com o repositório forkado
 
-Com exceção do arquivo `index.html` as demais adaptações no repositório ocorreram em arquivos próprios.
+Com exceção dos arquivos `index.html` e `README.md` as demais adaptações no repositório ocorreram em arquivos próprios.
 Seguindo orientações [deste post Stackoverflow](https://stackoverflow.com/a/41448584/11755155) as atualizações deverão ocorrer da seguinte maneira:
 
 ```
@@ -127,6 +127,8 @@ $ git pull upstream master
 
 # Rebase
 $ git rebase upstream/master
+
+# git rebase --skip poderá ser utilizado para facilitar o processo
 
 # Caso não acha nenhum conflito - Successfully rebased and updated refs/heads/master.
 # Ligar o servidor para testar se nada quebrou
