@@ -1,25 +1,6 @@
-[tool.poetry]
-name = "testes"
-version = "0.1.0"
-description = ""
-authors = ["Gabriel Dornas <gabrielbdornas@gmail.com>"]
-readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.10"
-jinja2 = "^3.1.2"
-
-
-[tool.poetry.group.dev.dependencies]
-taskipy = "^1.10.3"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
 [tool.taskipy.tasks]
 [tool.taskipy.tasks.index]
-cmd = "python scripts/generate_index.py" 
+cmd = "python scripts/generate_index.py"
 help = "Update index.html file."
 
 [tool.taskipy.tasks.presentation]
