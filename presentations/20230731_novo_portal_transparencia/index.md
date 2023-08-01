@@ -15,11 +15,8 @@
 
 ## Possibilidade Lei Inovação
 
-- Hub Mg abre com finalidade de incentivar a inovação.
-
-[pedido de projetos de inovação até 11/08/2023](https://docs.google.com/forms/d/e/1FAIpQLSeoXVKgObSNe7uiur9sUM7x-gtPeR9ccbNrGm3ORs8ZTeaINw/viewform).
-
-
+- [HubMg e o incentivo a inovação](https://github.com/transparencia-mg/reveal.js/blob/master/sources/20230801_hub_mg.pdf).
+- Recebimento de [projetos até 11/08/2023](https://docs.google.com/forms/d/e/1FAIpQLSeoXVKgObSNe7uiur9sUM7x-gtPeR9ccbNrGm3ORs8ZTeaINw/viewform).
 
 
 ## Análise Decreto Doações
@@ -34,6 +31,7 @@
 
 ## Próximos passos - Contratação
 
+- Envio de proposta HubMg.
 - Leitura detalhada do [Decreto 48.444 - Doações](https://www.almg.gov.br/legislacao-mineira/texto/DEC/48444/2022/?cons=1) e do [Chamamento Público SEDESE](https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2023/comite-gestor-de-captacao-de-recursos-e-parcerias/edital.pdf) (webnário).
 - Pensar em maiores benefícios para o doador.
 - Pesquisar possibilidades legais para contratação do doador após o encerramento da doação (manutenção).
