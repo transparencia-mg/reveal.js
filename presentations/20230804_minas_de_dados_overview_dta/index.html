@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Apresentação DTA</title>
+
+		<link rel="stylesheet" href="../../dist/reset.css" />
+		<link rel="stylesheet" href="../../dist/reveal.css" />
+		<link rel="stylesheet" href="../../dist/theme/solarized.css" id="theme"/>
+
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../../plugin/highlight/monokai.css" id="highlight-theme" />
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown="./index.md"
+				         data-separator="^\n\n\n"
+				         data-separator-vertical="^\n\n"
+				         data-separator-notes="^Note:"
+				         data-charset="utf-8"
+						 data-background-image="assets/cge_2.png"
+				         >
+				    <!--
+				        Note that Windows uses `\r\n` instead of `\n` as its linefeed character.
+				        For a regex that supports all operating systems, use `\r?\n` instead of `\n`.
+				    -->
+				</section>
+			</div>
+		</div>
+
+		<script src="../../dist/reveal.js"></script>
+		<script src="../../plugin/notes/notes.js"></script>
+		<script src="../../plugin/markdown/markdown.js"></script>
+		<script src="../../plugin/highlight/highlight.js"></script>
+
+		<!-- Menu -->
+		<script src="../../plugin/menu/menu.js"></script>
+
+		<!-- Mermaid -->
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin@2.0.0/plugin/mermaid/mermaid.js"></script>
+
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				progress: true,
+				slideNumber: 'c/t',
+				controlsLayout: 'edges',
+				totalTime: 3600,
+				// Mermaid
+				center: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMermaid, RevealMenu],
+
+				menu: {
+			          numbers: 'c',
+			          openSlideNumber: true,
+			          themes: true,
+			          themesPath: '../../dist/theme/',
+			          transitions: true,
+			          custom: [
+			                      {
+			                        title: 'Links',
+			                        icon: '<i class="fa fa-bookmark">',
+			                        src: 'links.html'
+			                      }
+			                    ]
+			        }
+			});
+		</script>
+	</body>
+</html>
