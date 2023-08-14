@@ -25,13 +25,13 @@ Note:
 
 ```mermaid
 mindmap
-  root((Fricção))
+  root((Dores))
     Consumidor
       1° Procura
         Dados online?
         Licença aberta?
         Legíveis por máquina?
-      2° Utilização
+      2° Fricção na utilização
         Formato tabular?
         Nomes de variáveis
         Encoding
@@ -51,13 +51,30 @@ mindmap
 ```
 
 
+## Contextualização
 
-### Teste
--
+```mermaid
+mindmap
+  root((Filosofias <br/> e Ferramentas))
+    Princípios e Diretrizes
+      Dados online
+        CKAN
+      Legíveis por máquina
+      Licença aberta
+      Formato tabular
+    Frictionless
+      Nomes de variáveis
+      Encoding
+      Delimitadores
+      Confiáveis após atualizações
+    Docs Like Code
+      Formato de texto
+      Versionamento
+      Construção colaborativa
+```
 
--
--
--
-- Os dados estão corretos após a última atualização?
-
-[Frictionless Data Specifications](https://specs.frictionlessdata.io/#overview)
+Note:
+- Escrita: Armazena o código fonte em sistema de controle de versão.
+- Revisão: Processo criterioso de revisão.
+- Construção: Feita de maneira automática.
+- Publicação: Sem interferência humana.
