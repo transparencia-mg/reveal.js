@@ -85,31 +85,66 @@ Note:
 ![mao_na_massa](assets/mao_na_massa.jpg)
 
 
-## Mão na massa - Consumidor
-Encontrei o [dado](https://dados.mg.gov.br/dataset/crimes-violentos) que queria, mas não está documentado.
+## Mão na massa
+Documentando um [dado](http://www.seguranca.mg.gov.br/2018-08-22-13-39-06/dados-abertos) que já está disponível online.
 
 Note:
+- Mostrar fricção como enconding e delimitador na prática.
 - Criar tabela dinâmica mostrando passos manuais.
 
 
 ## Mão na massa - Produtor
 
-    # Ambiente virtual
+    # Iniciando trabalho com controle de versão
     mkdir demostracao-minas-de-dados
-    touch requirements.txt # incluindo ipdb e frictionless
-    python3 -m venv venv
-    source venv/bin/activate
-    pip install -r requirements.tx
-
-    # Organizando o conjunto
-    mkdir data/ # Adicionando arquivos de dados
-    frictionless describe data --type package --json > datapackage.json
-
-    # Iniciando controle de versão
-    touch .gitignore # incluindo a pasta venv
+    cd demostracao-minas-de-dados
+    mkdir data/ # Adicionando arquivos de dados (crimes_violentos)
+    touch requirements.txt # incluindo ipdb e frictionless==4.16.6
+    touch .gitignore # incluindo pasta venv
     git init
-    git add
+    git branch -M main
+    git add .
     git commit -m "Commit Inicial"
 
-Note:
-- Acrescentar o campo valor com R$1.001,00
+    # Ambiente virtual
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+
+    # Documentação Inicial do conjunto
+    frictionless describe data --type package --json > datapackage.json
+
+
+## Mão na massa - Produtor
+
+    # Instalação frictionless[pandas]
+    # Novo arqquivo main.py
+    from frictionless import Package
+
+    package = Package('datapackage.json')
+    recurso = package.get_resource('crimes_violentos')
+    data_frame = recurso.to_pandas()
+
+
+## Mão na massa - Consumidor
+
+    import locale
+    import calendar
+    locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+    for ano in range(2018, 2024):
+      for mes in range(1,13):
+        numero_registros = data_frame.loc[(data_frame['Ano'] == ano) & (data_frame['Mês'] == mes )]
+        numero_registros = numero_registros['Registros'].sum()
+        # import ipdb; ipdb.set_trace(context=10)
+        numero_registros = format(numero_registros, "6,d").replace(",", ".")
+        print(f'Foram registrados {numero_registros} crimes violentos em todo Estado de Minas (RISP) em {calendar.month_name[mes].capitalize()} de {ano}.')
+
+
+## Mão na massa - Produtor
+
+Publicar utilizando dataset template
+
+
+## Mão na massa - Consumidor
+
+Acessar utilizando biblioteca get
