@@ -78,3 +78,38 @@ Note:
 - Revisão: Processo criterioso de revisão.
 - Construção: Feita de maneira automática.
 - Publicação: Sem interferência humana.
+
+
+
+## Mão na massa
+![mao_na_massa](assets/mao_na_massa.jpg)
+
+
+## Mão na massa - Consumidor
+Encontrei o [dado](https://dados.mg.gov.br/dataset/crimes-violentos) que queria, mas não está documentado.
+
+Note:
+- Criar tabela dinâmica mostrando passos manuais.
+
+
+## Mão na massa - Produtor
+
+    # Ambiente virtual
+    mkdir demostracao-minas-de-dados
+    touch requirements.txt # incluindo ipdb e frictionless
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.tx
+
+    # Organizando o conjunto
+    mkdir data/ # Adicionando arquivos de dados
+    frictionless describe data --type package --json > datapackage.json
+
+    # Iniciando controle de versão
+    touch .gitignore # incluindo a pasta venv
+    git init
+    git add
+    git commit -m "Commit Inicial"
+
+Note:
+- Acrescentar o campo valor com R$1.001,00
