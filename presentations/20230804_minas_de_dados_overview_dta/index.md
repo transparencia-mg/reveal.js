@@ -9,6 +9,8 @@ Note:
 - Tempo Estimado de uma hora.
 
 ## Agenda
+- Contextualização
+- Mão na massa
 
 
 
@@ -90,7 +92,6 @@ Documentando um [dado](http://www.seguranca.mg.gov.br/2018-08-22-13-39-06/dados-
 
 Note:
 - Mostrar fricção como enconding e delimitador na prática.
-- Criar tabela dinâmica mostrando passos manuais.
 
 
 ## Mão na massa - Produtor
@@ -99,7 +100,7 @@ Note:
     mkdir demostracao-minas-de-dados
     cd demostracao-minas-de-dados
     mkdir data/ # Adicionando arquivos de dados (crimes_violentos)
-    touch requirements.txt # incluindo ipdb e frictionless==4.16.6
+    touch requirements.txt # incluindo ipdb e frictionless[pandas]==4.16.6
     touch .gitignore # incluindo pasta venv
     git init
     git branch -M main
@@ -117,7 +118,6 @@ Note:
 
 ## Mão na massa - Produtor
 
-    # Instalação frictionless[pandas]
     # Novo arqquivo main.py
     from frictionless import Package
 
@@ -130,7 +130,43 @@ Note:
 
     import locale
     import calendar
+
     locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+
+    for ano in range(2018, 2024):
+      for mes in range(1,13):
+        numero_registros = data_frame.loc[(data_frame['Ano'] == ano) & (data_frame['Mês'] == mes )]
+        numero_registros = numero_registros['Registros'].sum()
+        numero_registros = format(numero_registros, "6,d").replace(",", ".")
+        print(f'Foram registrados {numero_registros} crimes violentos em todo Estado de Minas (RISP) em {calendar.month_name[mes].capitalize()} de {ano}.')
+
+
+## Mão na massa - Produtor
+
+- Disponibilização via [GitHub](https://github.com/transparencia-mg/crimes-violentos) e [CKAN](https://dados.mg.gov.br/dataset/crimes-violentos) com auxílio da ferramenta [dpckan](https://github.com/transparencia-mg/dpckan).
+- [Exemplo de documentação colaborativa](https://github.com/transparencia-mg/violencia-contra-mulher-old/pull/1/files) utilizando as ferramentas mostradas até aqui.
+
+
+## Aprendizados
+
+![poliglotas](assets/poliglotas.jpg)
+Documentação na [interface do CKAN](http://projetockan.cge.mg.gov.br/).
+
+
+
+## Aonde queremos chegar
+
+    import locale
+    import calendar
+    from requests import get
+
+    locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+
+    ckan_datapackage = get('')
+    package = Package(ckan_datapackage.json())
+    resource = package.get_resource('crimes_violentos')
+    data_frame = resource.to_pandas()
+
     for ano in range(2018, 2024):
       for mes in range(1,13):
         numero_registros = data_frame.loc[(data_frame['Ano'] == ano) & (data_frame['Mês'] == mes )]
@@ -138,13 +174,3 @@ Note:
         # import ipdb; ipdb.set_trace(context=10)
         numero_registros = format(numero_registros, "6,d").replace(",", ".")
         print(f'Foram registrados {numero_registros} crimes violentos em todo Estado de Minas (RISP) em {calendar.month_name[mes].capitalize()} de {ano}.')
-
-
-## Mão na massa - Produtor
-
-Publicar utilizando dataset template
-
-
-## Mão na massa - Consumidor
-
-Acessar utilizando biblioteca get
