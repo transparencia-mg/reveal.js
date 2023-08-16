@@ -117,6 +117,10 @@ Note:
     # Documentação Inicial do conjunto
     frictionless describe data --type package --json > datapackage.json
 
+Note:
+- Partir do describe e explicar que o log das ações estão descritas no código de bloco.
+- Boa prática durante a organização do conjunto utilizando controle de versão para evitar erros ou perda de informações.
+
 
 ## Mão na massa - Produtor
 
@@ -158,12 +162,14 @@ Eu estava procurando um dicionário de dados e encontrei essa duplicação no YA
 ![poliglotas](assets/poliglotas.jpg)
 Documentação na [interface do CKAN](http://projetockan.cge.mg.gov.br/).
 
+Note:
+- Publicar mesmo conjunto projeto ckan para acessar link datapackage.json gerado.
 
 
 ## Aonde queremos chegar
-
-    import locale
     import calendar
+    import locale
+    from frictionless import Package
     from requests import get
 
     locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
