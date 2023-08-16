@@ -3,7 +3,7 @@ Ferramentas e estratégias para incentivar a cultura de criação e utilização
 
 Note:
 - Agradecer a oportunidade e o convite.
-- Crédito à apresentação feita por Francisco no evento CodaBr2021.
+- Crédito à apresentação feita por Francisco no evento CodaBr2021 (Conferência Brasileira de Jornalismo de Dados e Métodos Digitais).
 - Convidar para visitar os links que serão mostrados ao longo da apresentação.
 - Perguntas ao longo da apresentação.
 - Tempo Estimado de uma hora.
@@ -11,7 +11,9 @@ Note:
 ## Agenda
 - Contextualização
 - Mão na massa
-
+- Aprendizados
+- Aonde queremos chegar
+- Questões para discusssão
 
 
 
@@ -28,18 +30,18 @@ Note:
 ```mermaid
 mindmap
   root((Dores))
-    Consumidor
+    CONSUMIDOR
       1° Procura
         Dados online?
         Licença aberta?
         Legíveis por máquina?
-      2° Fricção na utilização
+      2° Utilização
         Formato tabular?
         Nomes de variáveis
         Encoding
         Delimitadores
         Confiáveis após atualizações
-    Produtor
+    PRODUTOR
       1° Preparação
         ETL
       2° Documentação
@@ -65,10 +67,10 @@ mindmap
       Licença aberta
       Formato tabular
     Frictionless
-      Nomes de variáveis
+      Nomes e tipos de variáveis
       Encoding
       Delimitadores
-      Confiáveis após atualizações
+      Verificação sintática
     Docs Like Code
       Formato de texto
       Versionamento
@@ -118,7 +120,7 @@ Note:
 
 ## Mão na massa - Produtor
 
-    # Novo arqquivo main.py
+    # Novo arquivo main.py
     from frictionless import Package
 
     package = Package('datapackage.json')
@@ -175,7 +177,6 @@ Documentação na [interface do CKAN](http://projetockan.cge.mg.gov.br/).
       for mes in range(1,13):
         numero_registros = data_frame.loc[(data_frame['Ano'] == ano) & (data_frame['Mês'] == mes )]
         numero_registros = numero_registros['Registros'].sum()
-        # import ipdb; ipdb.set_trace(context=10)
         numero_registros = format(numero_registros, "6,d").replace(",", ".")
         print(f'Foram registrados {numero_registros} crimes violentos em todo Estado de Minas (RISP) em {calendar.month_name[mes].capitalize()} de {ano}.')
 
@@ -187,7 +188,7 @@ Documentação na [interface do CKAN](http://projetockan.cge.mg.gov.br/).
 
 
 ### Questões para discussão
-- Quem do grupo conhece/usa rotineiramente os portais PdA? é possível compartilhar uma percepção da experiência do uso?
+- Quem do grupo conhece/usa rotineiramente o portal PdA? é possível compartilhar uma percepção da experiência do uso?
 - O grupo compartilha a percepção relativa ao gap de conhecimento tanto de publicadores quanto de usuários? Quais estratégias podemos utilizar para minimizar o problema como, por exemplo, estratégias para o data literacy?
 - Quais outras sugestões do grupo para ativação deste ecossistema?
 
