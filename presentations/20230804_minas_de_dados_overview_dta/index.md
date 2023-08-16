@@ -141,10 +141,14 @@ Note:
         print(f'Foram registrados {numero_registros} crimes violentos em todo Estado de Minas (RISP) em {calendar.month_name[mes].capitalize()} de {ano}.')
 
 
-## Mão na massa - Produtor
+## Mão na massa - Consumidor
 
 - Disponibilização via [GitHub](https://github.com/transparencia-mg/crimes-violentos) e [CKAN](https://dados.mg.gov.br/dataset/crimes-violentos) com auxílio da ferramenta [dpckan](https://github.com/transparencia-mg/dpckan).
-- [Exemplo de documentação colaborativa](https://github.com/transparencia-mg/violencia-contra-mulher-old/pull/1/files) utilizando as ferramentas mostradas até aqui.
+- [Exemplo de documentação colaborativa](https://github.com/transparencia-mg/violencia-contra-mulher-old/pull/1) utilizando as ferramentas mostradas até aqui.
+
+> Apenas uma correção no significado de rmbh.
+Eu estava procurando um dicionário de dados e encontrei essa duplicação no YAML.
+
 
 
 ## Aprendizados
@@ -174,3 +178,21 @@ Documentação na [interface do CKAN](http://projetockan.cge.mg.gov.br/).
         # import ipdb; ipdb.set_trace(context=10)
         numero_registros = format(numero_registros, "6,d").replace(",", ".")
         print(f'Foram registrados {numero_registros} crimes violentos em todo Estado de Minas (RISP) em {calendar.month_name[mes].capitalize()} de {ano}.')
+
+
+
+### Questões para discussão
+- Faz sentido usar o padrão de metadados demonstrado? isso é uma dor comum no compartilhamento e (re)uso dos dados?
+- Temos a necessidade de popular o PdA, em escala, por adesão. Neste sentido, um dos produtos deste grupo pode ser a publicação de dados no PdA utilizando as ferramentas aqui apresentadas?
+
+
+### Questões para discussão
+- Quem do grupo conhece/usa rotineiramente os portais PdA? é possível compartilhar uma percepção da experiência do uso?
+- O grupo compartilha a percepção relativa ao gap de conhecimento tanto de publicadores quanto de usuários? Quais estratégias podemos utilizar para minimizar o problema como, por exemplo, estratégias para o data literacy?
+- Quais outras sugestões do grupo para ativação deste ecossistema?
+
+
+
+## Fim
+
+Muito Obrigado
