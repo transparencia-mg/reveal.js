@@ -99,8 +99,8 @@ Note:
 ## Mão na massa - Produtor
 
     # Iniciando trabalho com controle de versão
-    mkdir demostracao-minas-de-dados
-    cd demostracao-minas-de-dados
+    mkdir apresentacao-minas-de-dados
+    cd apresentacao-minas-de-dados
     mkdir data/ # Adicionando arquivos de dados (crimes_violentos)
     touch requirements.txt # incluindo ipdb e frictionless[pandas]==4.16.6
     touch .gitignore # incluindo pasta venv
