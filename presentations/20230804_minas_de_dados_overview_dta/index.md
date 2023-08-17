@@ -8,6 +8,8 @@ Note:
 - Perguntas ao longo da apresentação.
 - Tempo Estimado de uma hora.
 
+
+
 ## Agenda
 - Contextualização
 - Mão na massa
@@ -51,7 +53,6 @@ mindmap
       3° Publicação
         Ferramentas
         Treinamento
-        Padrão de documentação
 ```
 
 
@@ -115,7 +116,7 @@ Note:
     pip install -r requirements.txt
 
     # Documentação Inicial do conjunto
-    frictionless describe data --type package --json > datapackage.json
+    frictionless describe data/* --type package --json > datapackage.json
 
 Note:
 - Partir do describe e explicar que o log das ações estão descritas no código de bloco.
@@ -150,7 +151,7 @@ Note:
 ## Mão na massa - Consumidor
 
 - Disponibilização via [GitHub](https://github.com/transparencia-mg/crimes-violentos) e [CKAN](https://dados.mg.gov.br/dataset/crimes-violentos) com auxílio da ferramenta [dpckan](https://github.com/transparencia-mg/dpckan).
-- [Exemplo de documentação colaborativa](https://github.com/transparencia-mg/violencia-contra-mulher-old/pull/1) utilizando as ferramentas mostradas até aqui.
+- [Exemplo de documentação colaborativa](https://github.com/transparencia-mg/violencia-contra-mulher-old/pull/1/commits/3c492efbe101769fc9c58700005794e1ff5d93b4) utilizando as ferramentas mostradas até aqui.
 
 > Apenas uma correção no significado de rmbh.
 Eu estava procurando um dicionário de dados e encontrei essa duplicação no YAML.
@@ -160,7 +161,7 @@ Eu estava procurando um dicionário de dados e encontrei essa duplicação no YA
 ## Aprendizados
 
 ![poliglotas](assets/poliglotas.jpg)
-Documentação na [interface do CKAN](http://projetockan.cge.mg.gov.br/).
+Documentação na [interface do CKAN](http://projetockan.cge.mg.gov.br/dataset/crimes-violentos-dpckan).
 
 Note:
 - Publicar mesmo conjunto projeto ckan para acessar link datapackage.json gerado.
@@ -174,15 +175,15 @@ Note:
 
     locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
-    ckan_datapackage = get('')
+    ckan_datapackage = get('http://projetockan.cge.mg.gov.br/datapackage-creator/show-datapackage-json/fd3619b2-db62-45c2-8c15-52cba375a290')
     package = Package(ckan_datapackage.json())
-    resource = package.get_resource('crimes_violentos')
+    resource = package.get_resource('crimes-violentos-2022-1')
     data_frame = resource.to_pandas()
 
-    for ano in range(2018, 2024):
+    for ano in range(2022, 2023):
       for mes in range(1,13):
-        numero_registros = data_frame.loc[(data_frame['Ano'] == ano) & (data_frame['Mês'] == mes )]
-        numero_registros = numero_registros['Registros'].sum()
+        numero_registros = data_frame.loc[(data_frame['ANO'] == ano) & (data_frame['MES'] == mes )]
+        numero_registros = numero_registros['REGISTROS'].sum()
         numero_registros = format(numero_registros, "6,d").replace(",", ".")
         print(f'Foram registrados {numero_registros} crimes violentos em todo Estado de Minas (RISP) em {calendar.month_name[mes].capitalize()} de {ano}.')
 
